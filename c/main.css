@@ -1,0 +1,21 @@
+h1 {
+    translate: -150rem;
+    animation: transform 1.5s ease .5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color: yellow;
+    
+}
+
+@keyframes transform {
+    0% {
+        opacity: 0;
+        transform: translateX(0rem);
+    }
+    50% {
+        transform: translate(100rem);
+    }
+    100% {
+        transform: translateX(150rem);
+    }
+}
