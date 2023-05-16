@@ -1,21 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bruno+Ace&display=swap');
+
+body {
+    margin: 0rem;
+}
+
 h1 {
-    translate: -150rem;
+    transform: translateY(150rem);
     animation: transform 1.5s ease .5s;
     animation-fill-mode: forwards;
     text-align: center;
-    color: black;
-    
+    color: #EDE12F;
+    margin: 0rem;
+    font-size: 75px;
+    font-family: 'Alfa Slab One', serif;
+}
+
+header {
+    background-image: url("../images/stars.jpeg");
+    background-repeat: no-repeat;
+    padding: 4rem;
+    background-size: cover;
+}
+
+.spacer {
+    padding: .6rem;
+    background-color: #EDE12F;
+}
+
+.spacer2 {
+    padding: .2rem;
+    background-color: black;
+}
+
+p {
+    margin: 2rem;
+    font-family: 'Bruno Ace', serif;
+}
+
+button {
+    margin: 2rem;
+    font-family: 'Bruno Ace', serif;
+    color: #EDE12F;
+    background-color: black;
+    padding: 1rem;
 }
 
 @keyframes transform {
     0% {
-        opacity: 0;
-        transform: translateX(0rem);
-    }
-    50% {
-        transform: translate(100rem);
+        transform: translateY(-150rem);
     }
     100% {
-        transform: translateX(150rem);
+        transform: translateY(0rem);
     }
 }
