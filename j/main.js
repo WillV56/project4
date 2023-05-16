@@ -11,7 +11,7 @@ function getData() {
     .then(people => {
     const randomIndex = Math.floor(Math.random() * people.results.length);
     const myData = people.results[randomIndex].name;
-    const contentElement = document.createElement("p");
+    const contentElement = document.createElement("h2");
     contentElement.textContent = myData;
     const peopleElement = document.getElementById("people");
     peopleElement.innerHTML = '';

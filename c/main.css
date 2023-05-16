@@ -32,6 +32,17 @@ header {
     background-color: black;
 }
 
+h2 {
+    font-family: 'Bruno Ace', serif;
+    margin: 2rem;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Bruno Ace', serif;
+    margin: 2rem;
+    color: #EDE12F;
+}
 p {
     margin: 2rem;
     font-family: 'Bruno Ace', serif;
