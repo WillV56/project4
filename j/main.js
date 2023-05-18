@@ -8,6 +8,8 @@ document.getElementById("btn").addEventListener('click', getData);
 function getData() {
     const moviesElement = document.getElementById("movies");
     moviesElement.innerHTML = '';
+    const homeElement = document.getElementById("info");
+    homeElement.innerHTML = '';
     fetch("https://swapi.dev/api/people/?page=2")
     .then(response => response.json())
     .then(people => {
@@ -24,20 +26,24 @@ function getData() {
             fetch(film)
             .then(response => response.json())
             .then(item => {
-            const myData2 = item.title;
-            const contentElement2 = document.createElement("p");
-            contentElement2.textContent = myData2;
-            moviesElement.appendChild(contentElement2);
-        })
+                const myData2 = item.title;
+                const contentElement2 = document.createElement("p");
+                contentElement2.textContent = myData2;
+                moviesElement.appendChild(contentElement2);
+            })
         });
 
-       
- 
-    
-    
-    
-        
-        
-    })
+        const myData3 = people.results[randomIndex].homeworld;
+            fetch(myData3)
+            .then(response => response.json())
+            .then(item2 => {
+                const myData3 = item2.name;
+                const contentElement3 = document.createElement("p");
+                contentElement3.textContent = myData3;
+                homeElement.appendChild(contentElement3);
+            })
+            
+           
+            })
 }
 
