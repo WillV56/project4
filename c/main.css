@@ -56,6 +56,15 @@ button {
     padding: 1rem;
 }
 
+footer {
+    margin-top: 7rem;
+}
+
+.foot {
+    padding: 2rem;
+    background-color: #EDE12F;
+}
+
 @keyframes transform {
     0% {
         transform: translateY(-150rem);

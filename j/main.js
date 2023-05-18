@@ -6,6 +6,8 @@ getData();
 document.getElementById("btn").addEventListener('click', getData);
 }
 function getData() {
+    const moviesElement = document.getElementById("movies");
+    moviesElement.innerHTML = '';
     fetch("https://swapi.dev/api/people/?page=2")
     .then(response => response.json())
     .then(people => {
@@ -25,7 +27,6 @@ function getData() {
             const myData2 = item.title;
             const contentElement2 = document.createElement("p");
             contentElement2.textContent = myData2;
-            const moviesElement = document.getElementById("movies");
             moviesElement.appendChild(contentElement2);
         })
         });
