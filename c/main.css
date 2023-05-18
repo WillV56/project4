@@ -20,6 +20,7 @@ header {
     background-repeat: no-repeat;
     padding: 4rem;
     background-size: cover;
+    background-position: center;
 }
 
 .spacer {
@@ -41,7 +42,7 @@ h2 {
 h3 {
     font-family: 'Bruno Ace', serif;
     margin: 2rem;
-    color: #EDE12F;
+    color: #699DFA;
 }
 p {
     margin: 2rem;
@@ -61,7 +62,7 @@ footer {
 }
 
 .foot {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #EDE12F;
 }
 
