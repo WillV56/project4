@@ -43,7 +43,22 @@ function getData() {
                 homeElement.appendChild(contentElement3);
             })
             
-           
-            })
+            const myData4 = people.results[randomIndex].height;
+            const contentElement4 = document.createElement("p");
+            contentElement4.textContent = myData4;
+            const infoElement = document.getElementById("info2");
+            infoElement.innerHTML = '';
+            infoElement.appendChild(contentElement4);
+          
+            const myData5 = people.results[randomIndex].birth_year;
+            const contentElement5 = document.createElement("p");
+            contentElement5.textContent = myData5;
+            const birthElement = document.getElementById("info3");
+            birthElement.innerHTML = '';
+            birthElement.appendChild(contentElement5);
+        
+        
+        
+        })
 }
 

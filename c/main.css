@@ -36,7 +36,7 @@ header {
 h2 {
     font-family: 'Bruno Ace', serif;
     margin: 2rem;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 h3 {
@@ -72,5 +72,29 @@ footer {
     }
     100% {
         transform: translateY(0rem);
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 4rem;
+        justify-content: space-evenly;
+    }
+
+    #movies {
+        display: block;
+        
+        
     }
 }
