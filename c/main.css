@@ -82,19 +82,18 @@ footer {
     }
 
     p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     section {
         display: grid;
         grid-template-columns: 400px 400px;
-        grid-template-rows: 4rem;
+        grid-template-rows: 18rem;
         justify-content: space-evenly;
     }
 
     #movies {
         display: block;
-        
         
     }
 }
